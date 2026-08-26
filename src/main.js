@@ -54,7 +54,139 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. 7大核心优势 Cards Click -> Detail Modal
+  // 3. Coach Carousel Slider Logic (交互式教练海报轮播)
+  const coachTrack = document.getElementById('coachTrack');
+  const coachPrevBtn = document.getElementById('coachPrevBtn');
+  const coachNextBtn = document.getElementById('coachNextBtn');
+  const coachDots = document.getElementById('coachDots');
+  const coachSlides = document.querySelectorAll('.coach-slide-item');
+
+  if (coachTrack && coachSlides.length > 0) {
+    let currentIndex = 0;
+    let autoPlayTimer = null;
+
+    function getVisibleCount() {
+      const width = window.innerWidth;
+      if (width <= 768) return 1;
+      if (width <= 1100) return 2;
+      return 3;
+    }
+
+    function getMaxIndex() {
+      const visible = getVisibleCount();
+      return Math.max(0, coachSlides.length - visible);
+    }
+
+    function renderDots() {
+      if (!coachDots) return;
+      coachDots.innerHTML = '';
+      const maxIdx = getMaxIndex();
+      for (let i = 0; i <= maxIdx; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('carousel-dot');
+        if (i === currentIndex) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+          goToSlide(i);
+        });
+        coachDots.appendChild(dot);
+      }
+    }
+
+    function updateSlidePosition() {
+      const visible = getVisibleCount();
+      const slideWidthPercent = 100 / visible;
+      coachTrack.style.transform = `translateX(-${currentIndex * slideWidthPercent}%)`;
+
+      const dots = coachDots ? coachDots.querySelectorAll('.carousel-dot') : [];
+      dots.forEach((dot, idx) => {
+        if (idx === currentIndex) dot.classList.add('active');
+        else dot.classList.remove('active');
+      });
+    }
+
+    function goToSlide(index) {
+      const maxIdx = getMaxIndex();
+      if (index < 0) currentIndex = maxIdx;
+      else if (index > maxIdx) currentIndex = 0;
+      else currentIndex = index;
+      updateSlidePosition();
+    }
+
+    if (coachNextBtn) {
+      coachNextBtn.addEventListener('click', () => {
+        goToSlide(currentIndex + 1);
+        resetAutoPlay();
+      });
+    }
+
+    if (coachPrevBtn) {
+      coachPrevBtn.addEventListener('click', () => {
+        goToSlide(currentIndex - 1);
+        resetAutoPlay();
+      });
+    }
+
+    function startAutoPlay() {
+      stopAutoPlay();
+      autoPlayTimer = setInterval(() => {
+        goToSlide(currentIndex + 1);
+      }, 4000);
+    }
+
+    function stopAutoPlay() {
+      if (autoPlayTimer) clearInterval(autoPlayTimer);
+    }
+
+    function resetAutoPlay() {
+      stopAutoPlay();
+      startAutoPlay();
+    }
+
+    const wrapper = document.getElementById('coachCarouselWrapper');
+    if (wrapper) {
+      wrapper.addEventListener('mouseenter', stopAutoPlay);
+      wrapper.addEventListener('mouseleave', startAutoPlay);
+    }
+
+    // Touch & Swipe Support
+    let startX = 0;
+    let currentX = 0;
+    let isDragging = false;
+
+    coachTrack.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+      isDragging = true;
+      stopAutoPlay();
+    });
+
+    coachTrack.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      currentX = e.touches[0].clientX;
+    });
+
+    coachTrack.addEventListener('touchend', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      const diffX = startX - currentX;
+      if (Math.abs(diffX) > 40) {
+        if (diffX > 0) goToSlide(currentIndex + 1);
+        else goToSlide(currentIndex - 1);
+      }
+      startAutoPlay();
+    });
+
+    window.addEventListener('resize', () => {
+      if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
+      renderDots();
+      updateSlidePosition();
+    });
+
+    renderDots();
+    updateSlidePosition();
+    startAutoPlay();
+  }
+
+  // 4. 7大核心优势 Cards Click -> Detail Modal
   const advantageCards = document.querySelectorAll('.advantage-card');
   const detailModal = document.getElementById('detailModal');
   const detailModalBody = document.getElementById('detailModalBody');
@@ -93,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Room Type Filtering
+  // 5. Room Type Filtering
   const roomFilterBtns = document.querySelectorAll('.room-filter-btn');
   const roomCards = document.querySelectorAll('.room-card');
 
@@ -115,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Lightbox Viewer for Images
+  // 6. Lightbox Viewer for Full Images & Gallery
   const lightboxModal = document.getElementById('lightboxModal');
   const lightboxImg = document.getElementById('lightboxImg');
   const lightboxCaption = document.getElementById('lightboxCaption');
@@ -151,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. Interactive BMI & Weight Loss Calculator
+  // 7. Interactive BMI & Weight Loss Calculator
   const bmiForm = document.getElementById('bmiForm');
   const calcResultBox = document.getElementById('calcResultBox');
   const resultContent = document.getElementById('resultContent');
@@ -227,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Instant Client Voucher Card Generator (100% Pure Frontend)
+  // 8. Instant Client Voucher Card Generator (100% Pure Frontend)
   const bookModal = document.getElementById('bookModal');
   const closeBookModal = document.getElementById('closeBookModal');
   const bookingForm = document.getElementById('bookingForm');
