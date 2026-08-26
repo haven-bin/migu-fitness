@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const footerBookBtn = document.getElementById('footerBookBtn');
 
   function showWechatToast() {
-    alert('📱 觅谷健身官方微信: MIGU_FIT2026\n已为您自动复制微信账号！直接打开微信搜索即可与体测导师即时聊天！');
+    alert('📱 觅谷减肥健身训练营官方微信: MIGU_FIT2026\n已为您自动复制微信账号！直接打开微信搜索即可与体测导师即时聊天！');
   }
 
   if (openWechatBtn) openWechatBtn.addEventListener('click', showWechatToast);
