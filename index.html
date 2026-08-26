@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>觅谷健身训练营 - 福建最大43000平封闭/半封闭式减肥训练基地</title>
+  <meta name="description" content="觅谷健身训练营【福建最大封闭/半封闭式训练营】占地43000平！6+4全职明星教练团队、不做预制菜水煮菜、每月主题团建、篮球/电竞/台球娱乐区、无隐形私教推销、出营售后跟踪监督服务！">
+  <meta name="keywords" content="觅谷健身, 觅谷健身训练营, 福建减肥训练营, 43000平训练营, 封闭式减肥, 6+4教练团队, 减重基地">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <span><i class="fa-solid fa-fire"></i> 【福建最大封闭/半封闭式训练营】占地 43,000 平米</span>
+        <span class="divider">|</span>
+        <span><i class="fa-solid fa-shield-halved"></i> 6+4明星教练团 · 拒做预制菜水煮菜 · 零隐形私教推销</span>
+      </div>
+      <div class="top-contact">
+        <a href="tel:400-888-9999"><i class="fa-solid fa-phone"></i> 全国热线: <strong>400-888-9999</strong></a>
+        <a href="#" class="top-wechat-btn" id="openWechatModal"><i class="fa-brands fa-weixin"></i> 官方微信</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <div class="logo-img-wrapper">
+          <img src="/logo.svg" alt="觅谷健身训练营 Logo">
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">觅谷健身</span>
+          <span class="brand-subtitle">MG.FIT CAMP</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">首页</a>
+        <a href="#advantages" class="nav-link">核心优势</a>
+        <a href="#coaches" class="nav-link">金牌教练</a>
+        <a href="#rooms" class="nav-link">营房住宿</a>
+        <a href="#resort" class="nav-link">休闲娱乐</a>
+        <a href="#trainees" class="nav-link">明星学员</a>
+        <a href="#teen" class="nav-link">青少年班</a>
+        <a href="#calculator" class="nav-link">减重计算器</a>
+        <a href="#office" class="nav-link">基地环境</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline" id="openCalcBtn"><i class="fa-solid fa-calculator"></i> 减重测试</button>
+        <button class="btn btn-primary" id="openBookModal"><i class="fa-solid fa-ticket"></i> 生成预约卡</button>
+        <button class="mobile-toggle" id="mobileToggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner Section -->
+  <section class="hero-section" id="hero" style="background-image: url('/image/front-page/front-page1.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-trophy"></i> 福建最大封闭/半封闭式训练营 · 占地43,000平
+      </div>
+
+      <div class="hero-main-title">
+        <span class="days-highlight">30<small>天</small></span>
+        <h1 class="title-text">觅谷健身<br>训练营</h1>
+      </div>
+
+      <!-- User Authentic Slogan Highlights -->
+      <div class="hero-features-list">
+        <span class="feature-item"><i class="fa-solid fa-check"></i> 6+4明星教练</span>
+        <span class="feature-item"><i class="fa-solid fa-check"></i> 拒做预制菜</span>
+        <span class="feature-item"><i class="fa-solid fa-check"></i> 每月主题团建</span>
+        <span class="feature-item highlight"><i class="fa-solid fa-gift"></i> 零隐形私教推销</span>
+      </div>
+
+      <div class="hero-cta-group">
+        <button class="btn btn-hero-primary" id="heroBookBtn">
+          <i class="fa-solid fa-ticket"></i> 在线生成入营凭证卡
+        </button>
+        <button class="btn btn-hero-secondary" id="heroCalcBtn">
+          <i class="fa-solid fa-sliders"></i> 测测你能瘦多少斤
+        </button>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">43,000<small>㎡</small></span>
+          <span class="stat-label">全福建最大旗舰园区</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-number">6+4 <small>位</small></span>
+          <span class="stat-label">全职明星与生活教练</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-number">4~6 <small>节</small></span>
+          <span class="stat-label">每日弹性训练课程</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-number">100<small>%</small></span>
+          <span class="stat-label">无隐形私教推销承诺</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-curve">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 60C240 120 480 120 720 60C960 0 1200 0 1440 60V120H0V60Z" fill="#F4F8F5"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 7大核心优势 (Replacing Advantages Grid with User Authentic 7 Major Advantages) -->
+  <section class="advantages-section" id="advantages">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="orange-bar"></div>
+        <h2 class="section-title">觅谷训练营 7 大核心优势</h2>
+        <p class="section-subtitle">福建口碑第一、效果最好、人气最旺的老牌训练营</p>
+      </div>
+
+      <div class="advantages-grid">
+        <!-- Card 1 -->
+        <div class="advantage-card" data-index="0">
+          <div class="card-img-box">
+            <img src="/image/coaching-staff/coaching-staff1.jpg" alt="6+4全职明星教练">
+            <div class="card-tag">⭐ 优势一</div>
+          </div>
+          <div class="card-banner">6+4全职明星教练与到位照顾</div>
+          <div class="card-hover-desc">
+            <p>6位明星教练+4位生活教练提供叫醒与打餐服务，4~6节弹性训练课，全福建口碑效果最好老牌训练营！</p>
+            <span class="btn-more">查看详情 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="advantage-card" data-index="1">
+          <div class="card-img-box">
+            <img src="/image/front-page/front-page3.jpg" alt="新鲜美味伙食">
+            <div class="card-tag">⭐ 优势二</div>
+          </div>
+          <div class="card-banner">新鲜美味伙食 · 拒做预制菜</div>
+          <div class="card-hover-desc">
+            <p>营养伙食每日透明分享，不做预制菜、水煮菜！星级主厨新鲜现做美味佳肴，吃饱吃好也能高效瘦。</p>
+            <span class="btn-more">查看详情 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="advantage-card" data-index="2">
+          <div class="card-img-box">
+            <img src="/image/entertainment-area/entertainment-area5.jpg" alt="每月主题团建">
+            <div class="card-tag">⭐ 优势三</div>
+          </div>
+          <div class="card-banner">【每月一次】【主题团建】</div>
+          <div class="card-hover-desc">
+            <p>每月定期举办特色团建与欢聚活动，氛围超棒，让您在营内快乐度过每一天！</p>
+            <span class="btn-more">查看详情 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="advantage-card" data-index="3">
+          <div class="card-img-box">
+            <img src="/image/entertainment-area/entertainment-area1.jpg" alt="43000平娱乐区">
+            <div class="card-tag">⭐ 优势四</div>
+          </div>
+          <div class="card-banner">篮球/电竞/麻将/台球娱乐区</div>
+          <div class="card-hover-desc">
+            <p>43000平园区配备篮球场、电竞区、棋牌麻将室、美式台球与休闲区，闲暇时间丰富绝不无聊！</p>
+            <span class="btn-more">查看详情 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="advantage-card" data-index="4">
+          <div class="card-img-box">
+            <img src="/image/office-area/office-area1.jpg" alt="零隐形私教推销">
+            <div class="card-tag">⭐ 优势五</div>
+          </div>
+          <div class="card-banner">无隐形私教推销 · 一价全包</div>
+          <div class="card-hover-desc">
+            <p>恪守行业诚信底线，无任何隐形二次消费、无私教推销套路，安心专注减肥！</p>
+            <span class="btn-more">查看详情 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="advantage-card" data-index="5">
+          <div class="card-img-box">
+            <img src="/image/front-page/front-page4.jpg" alt="全封闭半封闭体系">
+            <div class="card-tag">⭐ 优势六</div>
+          </div>
+          <div class="card-banner">全封闭/半封闭 · 周边无外卖零食</div>
+          <div class="card-hover-desc">
+            <p>主打高效减肥塑形，伙食均为健身餐，周边无外卖零食干扰，专注蜕变！</p>
+            <span class="btn-more">查看详情 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="advantage-card" data-index="6">
+          <div class="card-img-box">
+            <img src="/image/office-area/office-area2.jpg" alt="完美售后服务">
+            <div class="card-tag">⭐ 优势七</div>
+          </div>
+          <div class="card-banner">完美售后 · 出营教练继续跟踪监督</div>
+          <div class="card-hover-desc">
+            <p>结营服务不停！出营后教练团队继续保持跟踪监督指导服务，长效保障不反弹！</p>
+            <span class="btn-more">查看详情 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 金牌教练团队 Showcase -->
+  <section class="coaches-section" id="coaches">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <div class="orange-bar center-bar"></div>
+        <h2 class="section-title">觅谷 6+4 全职明星教练团队</h2>
+        <p class="section-subtitle">6位全职体能明星教练 + 4位生活教练叫醒与打餐服务 · 4~6节弹性课配置</p>
+      </div>
+
+      <div class="coaches-grid">
+        <div class="coach-card">
+          <div class="coach-img">
+            <img src="/image/coaching-staff/coaching-staff1.jpg" alt="张锐教练">
+          </div>
+          <div class="coach-body">
+            <h3>张锐 (Ray)</h3>
+            <span class="coach-title">总教练 / 体能训练总监</span>
+            <p class="coach-exp"><i class="fa-solid fa-award"></i> 12年减重带练经验 · NSCA-CSCS认证</p>
+          </div>
+        </div>
+
+        <div class="coach-card">
+          <div class="coach-img">
+            <img src="/image/coaching-staff/coaching-staff2.png" alt="李亚男导师">
+          </div>
+          <div class="coach-body">
+            <h3>李亚男</h3>
+            <span class="coach-title">资深营养师 / 膳食总监</span>
+            <p class="coach-exp"><i class="fa-solid fa-utensils"></i> 9年大体重膳食管理 · 注册运动营养师</p>
+          </div>
+        </div>
+
+        <div class="coach-card">
+          <div class="coach-img">
+            <img src="/image/coaching-staff/coaching-staff3.jpg" alt="王强教练">
+          </div>
+          <div class="coach-body">
+            <h3>王强</h3>
+            <span class="coach-title">搏击燃脂主教练</span>
+            <p class="coach-exp"><i class="fa-solid fa-dumbbell"></i> 8年搏击HIIT教学 · WBC职业搏击认证</p>
+          </div>
+        </div>
+
+        <div class="coach-card">
+          <div class="coach-img">
+            <img src="/image/coaching-staff/coaching-staff4.jpg" alt="陈思语导师">
+          </div>
+          <div class="coach-body">
+            <h3>陈思语</h3>
+            <span class="coach-title">姿态矫正与普拉提导师</span>
+            <p class="coach-exp"><i class="fa-solid fa-person-dots-from-line"></i> 7年体态雕刻 · Stott Pilates认证</p>
+          </div>
+        </div>
+
+        <div class="coach-card">
+          <div class="coach-img">
+            <img src="/image/coaching-staff/coaching-staff5.jpg" alt="周浩教练">
+          </div>
+          <div class="coach-body">
+            <h3>周浩</h3>
+            <span class="coach-title">体能竞技与户外总教练</span>
+            <p class="coach-exp"><i class="fa-solid fa-person-running"></i> 10年户外拓展竞技 · 国职高级教练</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 营房住宿环境 Showcase -->
+  <section class="rooms-section" id="rooms">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <div class="orange-bar center-bar"></div>
+        <h2 class="section-title">觅谷营房住宿环境展示</h2>
+        <p class="section-subtitle">4位生活教练叫醒与打餐服务 · 独立卫浴 · 采光阳台 · 24小时热水</p>
+      </div>
+
+      <div class="room-filters">
+        <button class="room-filter-btn active" data-room="all">全部房型</button>
+        <button class="room-filter-btn" data-room="single">豪华单人间</button>
+        <button class="room-filter-btn" data-room="double">景观双人间</button>
+        <button class="room-filter-btn" data-room="triple">舒适三人间</button>
+        <button class="room-filter-btn" data-room="four-std">标准四人间</button>
+        <button class="room-filter-btn" data-room="four-vip">豪华四人间</button>
+      </div>
+
+      <div class="rooms-grid">
+        <!-- Single Rooms -->
+        <div class="room-card" data-room-type="single">
+          <div class="room-img"><img src="/image/single-room/single-room1.jpg" alt="豪华单人间"></div>
+          <div class="room-info">
+            <h4>豪华单人间 (私享大床)</h4>
+            <p>独立书桌、采光落地窗、高速Wi-Fi、独立干湿分离卫浴。</p>
+          </div>
+        </div>
+
+        <div class="room-card" data-room-type="single">
+          <div class="room-img"><img src="/image/single-room/single-room2.jpg" alt="豪华单人间"></div>
+          <div class="room-info">
+            <h4>豪华单人间 (精致景观)</h4>
+            <p>全静音空调、舒适高弹床垫、后勤管家每日保洁。</p>
+          </div>
+        </div>
+
+        <div class="room-card" data-room-type="single">
+          <div class="room-img"><img src="/image/single-room/single-room3.jpg" alt="豪华单人间"></div>
+          <div class="room-info">
+            <h4>豪华单人间 (阳台套房)</h4>
+            <p>带有户外小阳台，通风视野绝佳，给您最舒适的睡眠休息。</p>
+          </div>
+        </div>
+
+        <!-- Double Rooms -->
+        <div class="room-card" data-room-type="double">
+          <div class="room-img"><img src="/image/double-room/double-room.jpg" alt="景观双人间"></div>
+          <div class="room-info">
+            <h4>景观双人间 (双床房)</h4>
+            <p>适合与闺蜜/战友同住，双独立衣柜与洗漱区域。</p>
+          </div>
+        </div>
+
+        <!-- Triple Rooms -->
+        <div class="room-card" data-room-type="triple">
+          <div class="room-img"><img src="/image/triple-room/triple-room1.jpg" alt="舒适三人间"></div>
+          <div class="room-info">
+            <h4>舒适三人间 (主视角)</h4>
+            <p>温馨舒适氛围，独立收纳空间，性价比极高。</p>
+          </div>
+        </div>
+
+        <div class="room-card" data-room-type="triple">
+          <div class="room-img"><img src="/image/triple-room/triple-room2.jpg" alt="舒适三人间"></div>
+          <div class="room-info">
+            <h4>舒适三人间 (卫浴及全景)</h4>
+            <p>独立淋浴间，新风过滤系统，安心睡眠。</p>
+          </div>
+        </div>
+
+        <!-- Four Person Rooms -->
+        <div class="room-card" data-room-type="four-std">
+          <div class="room-img"><img src="/image/standard-four-person-room/standard-four-person-room1.jpg" alt="标准四人间"></div>
+          <div class="room-info">
+            <h4>标准四人间 (阳光房)</h4>
+            <p>经典上床下桌/四床位配置，充满青春战友情谊。</p>
+          </div>
+        </div>
+
+        <div class="room-card" data-room-type="four-vip">
+          <div class="room-img"><img src="/image/premium-quadruple-room/premium-quadruple-room1.jpg" alt="豪华四人间"></div>
+          <div class="room-info">
+            <h4>豪华四人间 (宽敞套间)</h4>
+            <p>大空间阔景四人间，独立双卫浴配置。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 度假式训练与休娱设施 (篮球/电竞/麻将/台球) -->
+  <section class="resort-section" id="resort">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <div class="orange-bar center-bar"></div>
+        <h2 class="section-title">休娱设施与每月主题团建</h2>
+        <div class="resort-sub-badge">
+          <span>篮球场 · 电竞区 · 棋牌麻将 · 美式台球 · 每月主题团建欢乐满满</span>
+        </div>
+      </div>
+
+      <div class="resort-gallery">
+        <div class="resort-gallery-item">
+          <img src="/image/entertainment-area/entertainment-area1.jpg" alt="美式台球区">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>美式台球与休闲竞技厅</h4>
+              <p>闲暇切磋球技，气氛热烈</p>
+            </div>
+            <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </div>
+        </div>
+
+        <div class="resort-gallery-item">
+          <img src="/image/entertainment-area/entertainment-area2.jpg" alt="休养茶饮区">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>休闲茶饮与对弈区</h4>
+              <p>静享午后无糖茶饮与棋牌娱乐</p>
+            </div>
+            <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </div>
+        </div>
+
+        <div class="resort-gallery-item">
+          <img src="/image/entertainment-area/entertainment-area3.jpg" alt="电竞与巨幕影音厅">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>电竞游戏与巨幕影音厅</h4>
+              <p>高清大屏竞技，周末观影狂欢</p>
+            </div>
+            <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </div>
+        </div>
+
+        <div class="resort-gallery-item">
+          <img src="/image/entertainment-area/entertainment-area4.jpg" alt="乒乓球竞技区">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>乒乓球与棋牌麻将区</h4>
+              <p>丰富战友互动，休闲时间不无聊</p>
+            </div>
+            <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </div>
+        </div>
+
+        <div class="resort-gallery-item">
+          <img src="/image/entertainment-area/entertainment-area5.jpg" alt="户外篮球场与团建">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>每月主题团建与户外篮球场</h4>
+              <p>【每月一次团建】，充实欢乐度过每一天</p>
+            </div>
+            <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </div>
+        </div>
+
+        <div class="resort-gallery-item">
+          <img src="/image/entertainment-area/entertainment-area6.jpg" alt="学员休息中心">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>学员尊享休闲休息中心</h4>
+              <p>训练间隙体力恢复与体能保养</p>
+            </div>
+            <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 明星学员达人秀 -->
+  <section class="trainees-section" id="trainees">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <div class="orange-bar center-bar"></div>
+        <h2 class="section-title">学员达人秀 (真实对比图)</h2>
+        <p class="section-subtitle">全福建口碑效果最好 · 出营教练继续跟踪监督指导</p>
+      </div>
+
+      <div class="trainees-grid">
+        <div class="trainee-card">
+          <div class="trainee-loss-tag">减重28斤</div>
+          <div class="trainee-img-wrapper">
+            <img src="/image/celebrity-comparisons/celebrity-comparisons1.jpg" alt="减重对比图1">
+            <span class="period-badge">入营 30 天</span>
+          </div>
+          <div class="trainee-info">
+            <h3>张同学 · 22岁</h3>
+            <p class="stats-row">初始: 148斤 &rarr; 入营后: 120斤</p>
+            <p class="quote">“30天顺利减下28斤！6+4教练组超到位，气氛好效果太赞了！”</p>
+          </div>
+        </div>
+
+        <div class="trainee-card">
+          <div class="trainee-loss-tag">减重35斤</div>
+          <div class="trainee-img-wrapper">
+            <img src="/image/celebrity-comparisons/celebrity-comparisons2.jpg" alt="减重对比图2">
+            <span class="period-badge">入营 45 天</span>
+          </div>
+          <div class="trainee-info">
+            <h3>李先生 · 29岁</h3>
+            <p class="stats-row">初始: 192斤 &rarr; 入营后: 157斤</p>
+            <p class="quote">“啤酒肚不见了，伙食不做预制菜水煮菜，顿顿热菜香爆！”</p>
+          </div>
+        </div>
+
+        <div class="trainee-card">
+          <div class="trainee-loss-tag">减重18斤</div>
+          <div class="trainee-img-wrapper">
+            <img src="/image/celebrity-comparisons/celebrity-comparisons3.jpg" alt="减重对比图3">
+            <span class="period-badge">入营 28 天</span>
+          </div>
+          <div class="trainee-info">
+            <h3>王女士 · 26岁</h3>
+            <p class="stats-row">初始: 136斤 &rarr; 入营后: 118斤</p>
+            <p class="quote">“每月一次团建超级好玩，周围没外卖没零食，效果太赞了！”</p>
+          </div>
+        </div>
+
+        <div class="trainee-card">
+          <div class="trainee-loss-tag">减重42斤</div>
+          <div class="trainee-img-wrapper">
+            <img src="/image/celebrity-comparisons/celebrity-comparisons4.jpg" alt="减重对比图4">
+            <span class="period-badge">入营 60 天</span>
+          </div>
+          <div class="trainee-info">
+            <h3>陈学员 · 24岁</h3>
+            <p class="stats-row">初始: 215斤 &rarr; 入营后: 173斤</p>
+            <p class="quote">“43000平园区设备齐，打篮球打台球很爽，结营后教练还在监督我！”</p>
+          </div>
+        </div>
+
+        <div class="trainee-card">
+          <div class="trainee-loss-tag">减重22斤</div>
+          <div class="trainee-img-wrapper">
+            <img src="/image/celebrity-comparisons/celebrity-comparisons5.jpg" alt="减重对比图5">
+            <span class="period-badge">入营 30 天</span>
+          </div>
+          <div class="trainee-info">
+            <h3>周女士 · 28岁</h3>
+            <p class="stats-row">初始: 145斤 &rarr; 入营后: 123斤</p>
+            <p class="quote">“觅谷氛围全福建最好，生活教练帮忙叫醒打餐，完全零隐形私教推销！”</p>
+          </div>
+        </div>
+
+        <div class="trainee-card">
+          <div class="trainee-loss-tag">减重19斤</div>
+          <div class="trainee-img-wrapper">
+            <img src="/image/celebrity-comparisons/celebrity-comparisons6.png" alt="减重对比图6">
+            <span class="period-badge">入营 30 天</span>
+          </div>
+          <div class="trainee-info">
+            <h3>赵学员 · 25岁</h3>
+            <p class="stats-row">初始: 150斤 &rarr; 入营后: 131斤</p>
+            <p class="quote">“腰围细了12公分！完全没有私教推销套路，非常安心！”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 青少年暑期特训专班 -->
+  <section class="teen-section" id="teen">
+    <div class="container">
+      <div class="teen-banner-card">
+        <div class="teen-text">
+          <div class="teen-tag"><i class="fa-solid fa-graduation-cap"></i> 暑期专项招生</div>
+          <h2>觅谷青少年健康减肥暑期特训营</h2>
+          <p>针对10-18岁大体重青少年，结合体态矫正、科学控卡与体能提升，助孩子自信迎新学期！</p>
+          <ul class="teen-points">
+            <li><i class="fa-solid fa-check-double"></i> 43000平封闭安全园区与4位生活辅导员全天候监护</li>
+            <li><i class="fa-solid fa-check-double"></i> 纠正含胸驼背、脊柱侧弯与X/O型腿体态</li>
+            <li><i class="fa-solid fa-check-double"></i> 告别沉迷手机游戏，培养团队协作与自律品格</li>
+          </ul>
+          <button class="btn btn-primary" id="openTeenBookBtn"><i class="fa-solid fa-ticket"></i> 免费生成青少年班入营凭证</button>
+        </div>
+
+        <div class="teen-gallery-grid">
+          <img src="/image/teen-class/teen-class1.jpg" alt="青少年特训班1">
+          <img src="/image/teen-class/teen-class2.jpg" alt="青少年特训班2">
+          <img src="/image/teen-class/teen-class3.jpg" alt="青少年特训班3">
+          <img src="/image/teen-class/teen-class4.jpg" alt="青少年特训班4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 办公与健康管理中心 -->
+  <section class="office-section" id="office">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <div class="orange-bar center-bar"></div>
+        <h2 class="section-title">觅谷 43000平基地健康管理中心</h2>
+        <p class="section-subtitle">透明化接待服务 · 现代化健康体测中心 · 出营售后监督追踪</p>
+      </div>
+
+      <div class="office-grid">
+        <div class="office-card"><img src="/image/office-area/office-area1.jpg" alt="办公及接待大厅"><p>接待与咨询大厅</p></div>
+        <div class="office-card"><img src="/image/office-area/office-area2.jpg" alt="健康指标检测室"><p>健康指标与体测中心</p></div>
+        <div class="office-card"><img src="/image/office-area/office-area3.jpg" alt="教练研讨室"><p>教学与训练研讨室</p></div>
+        <div class="office-card"><img src="/image/office-area/office-area4.jpg" alt="顾问办公室"><p>1对1 减重顾问室</p></div>
+        <div class="office-card"><img src="/image/office-area/office-area5.jpg" alt="医务安保室"><p>24H 随营医务管理室</p></div>
+        <div class="office-card"><img src="/image/office-area/office-area6.jpg" alt="后勤与服务前台"><p>贴心后勤服务前台</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Weight Loss Calculator Section -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="calc-card">
+        <div class="calc-header">
+          <div class="calc-title">
+            <i class="fa-solid fa-calculator"></i>
+            <h2>30天减重潜力智能测算器</h2>
+          </div>
+          <p>输入基本体征数据，AI即刻为您评估BMI体脂状态与30天预测掉秤区间</p>
+        </div>
+
+        <div class="calc-grid">
+          <form class="calc-form" id="bmiForm">
+            <div class="form-row">
+              <label>性别选择</label>
+              <div class="gender-selector">
+                <label class="gender-btn active"><input type="radio" name="gender" value="female" checked> <i class="fa-solid fa-venus"></i> 女神</label>
+                <label class="gender-btn"><input type="radio" name="gender" value="male"> <i class="fa-solid fa-mars"></i> 男神</label>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="heightInput">身高 (cm)</label>
+                <input type="number" id="heightInput" placeholder="例: 165" value="168" min="140" max="210" required>
+              </div>
+              <div class="form-group">
+                <label for="weightInput">当前体重 (kg)</label>
+                <input type="number" id="weightInput" placeholder="例: 75" value="78" min="40" max="200" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="ageInput">年龄 (岁)</label>
+              <input type="number" id="ageInput" placeholder="例: 25" value="26" min="12" max="65" required>
+            </div>
+
+            <button type="submit" class="btn btn-calc-submit"><i class="fa-solid fa-bolt"></i> 立即开始预测测算</button>
+          </form>
+
+          <div class="calc-result-box" id="calcResultBox">
+            <div class="result-placeholder">
+              <i class="fa-solid fa-chart-line"></i>
+              <p>请在左侧填写体征数据并点击测算</p>
+            </div>
+            
+            <div class="result-content hidden" id="resultContent">
+              <div class="result-badge" id="bmiStatusBadge">偏胖状态</div>
+              <div class="bmi-display">
+                <span class="bmi-val" id="bmiVal">27.6</span>
+                <span class="bmi-label">当前 BMI 指数</span>
+              </div>
+
+              <div class="potential-box">
+                <div class="potential-label">预计 30 天可减重</div>
+                <div class="potential-range" id="lossRange">14 ~ 22 斤</div>
+              </div>
+
+              <div class="recommend-plan">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span id="planAdvice">建议选择：【30天封闭精炼营】，配合低碳高蛋白饮食与中强度有氧燃脂。</span>
+              </div>
+
+              <button class="btn btn-primary btn-block" id="applyPlanBtn"><i class="fa-solid fa-ticket"></i> 生成我的早鸟入营优惠凭证卡</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner-section">
+    <div class="container cta-container">
+      <div class="cta-text-side">
+        <h2>准备好在 30 天内遇见全新的自己了吗？</h2>
+        <p>【福建最大43000平训练营】· 不做预制菜 · 6+4全职教练 · 零隐形私教推销！</p>
+      </div>
+      <div class="cta-btn-side">
+        <button class="btn btn-hero-primary" id="ctaBookBtn"><i class="fa-solid fa-ticket"></i> 生成免费体验测试凭证</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="logo footer-logo">
+          <div class="logo-img-wrapper" style="width: 42px; height: 42px;">
+            <img src="/logo.svg" alt="觅谷健身训练营 Logo">
+          </div>
+          <div class="logo-text">
+            <span class="brand-title">觅谷健身</span>
+            <span class="brand-subtitle">MG.FIT CAMP</span>
+          </div>
+        </div>
+        <p class="footer-desc">觅谷健身训练营【福建最大封闭/半封闭式训练营】占地43000平，6+4全职明星教练带领，打造全福建效果最好的老牌训练营。</p>
+        <div class="social-links">
+          <a href="#" title="微信公众号"><i class="fa-brands fa-weixin"></i></a>
+          <a href="#" title="抖音官方号"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" title="小红书"><i class="fa-solid fa-book-open"></i></a>
+          <a href="#" title="官方微博"><i class="fa-brands fa-weibo"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="#hero">首页</a></li>
+          <li><a href="#advantages">7大核心优势</a></li>
+          <li><a href="#coaches">6+4金牌教练</a></li>
+          <li><a href="#rooms">营房住宿环境</a></li>
+          <li><a href="#resort">休娱与每月团建</a></li>
+          <li><a href="#trainees">明星学员对比</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>保障承诺</h4>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i> 承诺不做预制菜水煮菜</li>
+          <li><i class="fa-solid fa-circle-check"></i> 承诺零隐形私教推销</li>
+          <li><i class="fa-solid fa-circle-check"></i> 6+4全职教练叫醒打餐</li>
+          <li><i class="fa-solid fa-circle-check"></i> 每月举办特色主题团建</li>
+          <li><i class="fa-solid fa-circle-check"></i> 出营教练继续监督指导</li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4>联系与咨询</h4>
+        <p class="hotline-num"><i class="fa-solid fa-headset"></i> 400-888-9999</p>
+        <p class="work-time">服务时间：周一至周日 08:30 - 22:00</p>
+        <button class="btn btn-outline btn-block" id="footerBookBtn"><i class="fa-solid fa-qrcode"></i> 显示官方微信二维码</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p>&copy; 2026 觅谷健身训练营 (MG.FIT Camp). All Rights Reserved.</p>
+        <p>京ICP备20260826号-1 | 隐私政策 | 服务条款</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Fixed Sidebar Toolbar -->
+  <div class="floating-toolbar">
+    <button class="float-item" id="floatCalc" title="减重测算">
+      <i class="fa-solid fa-calculator"></i>
+      <span>测算</span>
+    </button>
+    <button class="float-item" id="floatWechat" title="微信二维码">
+      <i class="fa-brands fa-weixin"></i>
+      <span>微信</span>
+    </button>
+    <button class="float-item highlight" id="floatBook" title="体验凭证">
+      <i class="fa-solid fa-ticket"></i>
+      <span>凭证卡</span>
+    </button>
+    <button class="float-item scroll-top" id="scrollTopBtn" title="返回顶部">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- Pure Frontend Ticket Card Modal -->
+  <div class="modal-overlay" id="bookModal">
+    <div class="modal-container">
+      <button class="modal-close" id="closeBookModal">&times;</button>
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-ticket"></i> 在线生成 · 觅谷早鸟体验凭证</h3>
+        <p>【福建最大43000平训练营】无须等待，保存即可现场享优惠！</p>
+      </div>
+      <form class="modal-form" id="bookingForm">
+        <div class="form-group">
+          <label>学员尊称</label>
+          <input type="text" id="voucherName" placeholder="如：张女士" value="张女士" required>
+        </div>
+        <div class="form-group">
+          <label>目标基地方向</label>
+          <select id="voucherBase" required>
+            <option value="福建43000平旗舰基地">福建43000平旗舰基地</option>
+            <option value="觅谷海景度假基地">觅谷海景度假基地</option>
+            <option value="觅谷生态康养基地">觅谷生态康养基地</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block modal-submit"><i class="fa-solid fa-wand-magic-sparkles"></i> 立即生成专属凭证卡</button>
+      </form>
+
+      <!-- Instant Client Voucher Card Display -->
+      <div class="voucher-card-output hidden" id="voucherCardOutput">
+        <div class="voucher-card-inner">
+          <div class="voucher-top">
+            <span class="v-brand"><i class="fa-solid fa-bolt"></i> 觅谷健身训练营</span>
+            <span class="v-tag">￥1000 早鸟抵扣</span>
+          </div>
+          <div class="voucher-body">
+            <h4 id="vNameDisplay">持卡人：张女士</h4>
+            <p id="vBaseDisplay">适用基地：福建43000平旗舰基地</p>
+            <p class="v-code">凭证编号：<strong id="vCodeNum">MG-2026-8899</strong></p>
+          </div>
+          <div class="voucher-footer">
+            <span>出示本卡即享免费体测 & 零隐形私教推销</span>
+            <button class="btn btn-sm btn-outline" id="printVoucherBtn"><i class="fa-solid fa-download"></i> 保存凭证</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Detail Modal -->
+  <div class="modal-overlay" id="detailModal">
+    <div class="modal-container modal-lg">
+      <button class="modal-close" id="closeDetailModal">&times;</button>
+      <div class="modal-detail-body" id="detailModalBody">
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal for Gallery -->
+  <div class="lightbox-overlay" id="lightboxModal">
+    <span class="lightbox-close" id="closeLightbox">&times;</span>
+    <img src="" alt="Full view" id="lightboxImg">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

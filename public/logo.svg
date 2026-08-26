@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E8A4E" />
+      <stop offset="100%" stop-color="#6BB648" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Green Circle -->
+  <circle cx="150" cy="130" r="100" fill="none" stroke="#2E8A4E" stroke-width="8"/>
+
+  <!-- House Roof Icon above MG.FIT -->
+  <path d="M 175 100 L 205 92 L 235 100" fill="none" stroke="#2E8A4E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- MG.FIT Text -->
+  <text x="205" y="115" font-family="'Noto Sans SC', sans-serif" font-weight="900" font-size="20" fill="#2E8A4E" text-anchor="middle" letter-spacing="1">MG.FIT</text>
+
+  <!-- Left Large Leaf -->
+  <path d="M 80 130 C 100 170, 130 190, 140 195 C 120 180, 100 155, 80 130 Z" fill="#2E8A4E" />
+
+  <!-- Right Layered Leaves -->
+  <path d="M 145 190 C 180 180, 210 145, 215 120 C 200 150, 170 175, 145 190 Z" fill="#6BB648" />
+  <path d="M 155 195 C 190 190, 220 165, 230 140 C 215 165, 185 185, 155 195 Z" fill="#4CA839" />
+
+  <!-- Running Athlete Silhouette -->
+  <path d="M 145 70 A 10 10 0 1 0 145 70.1 Z" fill="#2E8A4E"/> <!-- Head -->
+  <path d="M 140 85 C 145 82, 155 82, 158 88 L 152 108 L 158 122 L 148 150 L 140 190 C 142 170, 145 155, 148 140 L 140 120 L 132 105 Z" fill="#2E8A4E"/> <!-- Body & Right Leg -->
+  <path d="M 148 108 L 165 115 L 175 140 L 165 142 L 158 125 Z" fill="#2E8A4E"/> <!-- Left Bent Leg -->
+  <path d="M 145 88 L 160 95 L 165 85" fill="none" stroke="#2E8A4E" stroke-width="5" stroke-linecap="round"/> <!-- Arm -->
+
+  <!-- Brand Title Text Below -->
+  <text x="150" y="270" font-family="'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-weight="900" font-size="28" fill="#2B3037" text-anchor="middle" letter-spacing="2">觅谷健身训练营</text>
+</svg>
