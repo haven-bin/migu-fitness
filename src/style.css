@@ -1,12 +1,12 @@
 /* ==========================================================
-   觅谷健身训练营 - 官方视觉代币与样式表 (新增教练团队全图轮播模式)
+   觅谷健身训练营 - 官方视觉代币与样式表 (清爽高端无多余背景教练卡片)
    ========================================================== */
 
 :root {
   --primary: #2E8A4E;
   --primary-gradient: linear-gradient(135deg, #2E8A4E 0%, #5BB347 100%);
   --primary-hover: #216A3A;
-  --primary-light: rgba(46, 138, 78, 0.12);
+  --primary-light: rgba(46, 138, 78, 0.1);
   --secondary: #6BB648;
   --accent-gold: #F59E0B;
   --accent-dark: #1B281E;
@@ -15,12 +15,12 @@
   --bg-light: #F4F8F5;
   --bg-white: #FFFFFF;
   --border-color: #E2EBE5;
-  --shadow-sm: 0 4px 12px rgba(0,0,0,0.05);
-  --shadow-md: 0 10px 30px rgba(46, 138, 78, 0.08);
+  --shadow-sm: 0 4px 14px rgba(0,0,0,0.04);
+  --shadow-md: 0 12px 32px rgba(46, 138, 78, 0.1);
   --shadow-primary: 0 12px 28px rgba(46, 138, 78, 0.28);
   --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -595,7 +595,7 @@ img {
 }
 
 /* ==========================================================
-   金牌教练团队 Section (交互式完整图片轮播模式)
+   金牌教练团队 Section (清爽无多余背景 · 高端精致卡片轮播)
    ========================================================== */
 .coaches-section {
   padding: 70px 0;
@@ -610,7 +610,7 @@ img {
 
 .carousel-nav {
   position: absolute;
-  top: 45%;
+  top: 48%;
   transform: translateY(-50%);
   width: 48px;
   height: 48px;
@@ -621,7 +621,7 @@ img {
   font-size: 1.25rem;
   cursor: pointer;
   z-index: 10;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -644,7 +644,7 @@ img {
 .coach-carousel-viewport {
   overflow: hidden;
   width: 100%;
-  padding: 10px 0 20px 0;
+  padding: 12px 0 24px 0;
 }
 
 .coach-carousel-track {
@@ -660,7 +660,8 @@ img {
   padding: 0 12px;
 }
 
-.coach-card.full-image-card {
+/* 清爽高端卡片 - 纯白干净架构 */
+.clean-coach-card {
   background: #FFFFFF;
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -672,39 +673,39 @@ img {
   border: 1px solid var(--border-color);
 }
 
-.coach-card.full-image-card:hover {
+.clean-coach-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-md);
+  border-color: #B5DFBE;
 }
 
-/* 展示完整海报图容器 (100% Complete Image Display) */
-.full-img-box {
-  height: 420px;
-  background: linear-gradient(135deg, #143520 0%, #1B281E 100%);
+/* 图片容器：取消任何黑框与渐变背景，纯图片展示 */
+.pure-img-container {
+  width: 100%;
+  height: 380px;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: transparent;
   cursor: pointer;
 }
 
-.full-img-box img {
+.pure-img-container img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* 关键：完整全图等比例自适应展示，不裁剪任何资质文字 */
-  background: transparent;
-  transition: transform 0.4s ease;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+  display: block;
 }
 
-.coach-card:hover .full-img-box img {
-  transform: scale(1.04);
+.clean-coach-card:hover .pure-img-container img {
+  transform: scale(1.05);
 }
 
-.full-img-overlay {
+.pure-img-hover {
   position: absolute;
   inset: 0;
-  background: rgba(20, 53, 32, 0.45);
+  background: rgba(0, 0, 0, 0.3);
   opacity: 0;
   transition: var(--transition);
   display: flex;
@@ -713,11 +714,11 @@ img {
   backdrop-filter: blur(2px);
 }
 
-.full-img-box:hover .full-img-overlay {
+.pure-img-container:hover .pure-img-hover {
   opacity: 1;
 }
 
-.zoom-badge {
+.view-btn {
   background: var(--primary-gradient);
   color: #fff;
   font-size: 0.88rem;
@@ -729,8 +730,79 @@ img {
   transition: transform 0.3s ease;
 }
 
-.full-img-box:hover .zoom-badge {
+.pure-img-container:hover .view-btn {
   transform: translateY(0);
+}
+
+/* 教练姓名与信息展示面板 */
+.coach-info-panel {
+  padding: 18px 20px;
+  background: #FFFFFF;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.coach-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.coach-name {
+  font-size: 1.18rem;
+  font-weight: 900;
+  color: var(--accent-dark);
+  line-height: 1.2;
+}
+
+.coach-name .en-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+.coach-badge {
+  display: inline-block;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(46, 138, 78, 0.2);
+  white-space: nowrap;
+}
+
+.coach-quote {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #374151;
+  font-style: italic;
+  background: var(--bg-light);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-left: 3px solid var(--primary);
+  margin: 6px 0 10px 0;
+  line-height: 1.4;
+}
+
+.coach-credential {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.coach-credential i {
+  color: var(--primary);
+  margin-right: 6px;
 }
 
 .carousel-dots {
@@ -738,7 +810,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .carousel-dot {
@@ -1938,8 +2010,8 @@ input:focus, select:focus {
     max-width: 100%;
   }
 
-  .full-img-box {
-    height: 380px;
+  .pure-img-container {
+    height: 320px;
   }
 
   .carousel-prev {
@@ -2116,7 +2188,7 @@ input:focus, select:focus {
     font-size: 0.8rem;
   }
 
-  .full-img-box {
-    height: 320px;
+  .pure-img-container {
+    height: 280px;
   }
 }
