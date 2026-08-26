@@ -20,7 +20,7 @@ export const advantagesData = [
     title: "新鲜美味伙食 · 拒绝预制菜",
     tag: "每日伙食分享",
     banner: "新鲜美味伙食 · 不做预制菜水煮菜",
-    image: "/image/front-page/front-page3.jpg",
+    image: "/image/front-page/front-page7.jpg",
     shortDesc: "营养伙食每日透明分享，不做预制菜、水煮菜！新鲜现做美味佳肴，吃饱吃好也能高效瘦。",
     detailHtml: `
       <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">每日新鲜现做 · 告别难吃水煮菜</h3>
