@@ -1,7 +1,7 @@
-// 7大核心保障卡片数据 (1.营地总环境 2.宿舍环境 3.伙食 4.教练 5.课程 6.效果对比 7.团建活动)
+// 7大核心保障卡片数据 (营地总环境、宿舍环境、伙食、教练、课程、效果对比、团建活动)
 export const advantagesData = [
   {
-    title: "1、营地总环境",
+    title: "营地总环境",
     tag: "⭐ 保障一",
     banner: "43,000平旗舰营地总环境",
     image: "/image/office-area/office-area1.jpg",
@@ -18,7 +18,7 @@ export const advantagesData = [
     `
   },
   {
-    title: "2、宿舍环境",
+    title: "宿舍环境",
     tag: "⭐ 保障二",
     banner: "豪华单人/双人/多人间宿舍",
     image: "/image/single-room/single-room1.jpg",
@@ -34,7 +34,7 @@ export const advantagesData = [
     `
   },
   {
-    title: "3、伙食",
+    title: "伙食",
     tag: "⭐ 保障三",
     banner: "新鲜美味伙食 · 拒做预制菜",
     image: "/image/front-page/front-page7.jpg",
@@ -50,7 +50,7 @@ export const advantagesData = [
     `
   },
   {
-    title: "4、教练",
+    title: "教练",
     tag: "⭐ 保障四",
     banner: "6+4全职明星教练到位照顾",
     image: "/image/coaching-staff/coaching-staff1.jpg",
@@ -66,7 +66,7 @@ export const advantagesData = [
     `
   },
   {
-    title: "5、课程",
+    title: "课程",
     tag: "⭐ 保障五",
     banner: "每日4~6节科学弹性课程",
     image: "/image/teen-class/teen-class1.jpg",
@@ -82,7 +82,7 @@ export const advantagesData = [
     `
   },
   {
-    title: "6、效果对比",
+    title: "效果对比",
     tag: "⭐ 保障六",
     banner: "入营签约减肥 · 无效退款",
     image: "/image/celebrity-comparisons/celebrity-comparisons4.jpg",
@@ -98,7 +98,7 @@ export const advantagesData = [
     `
   },
   {
-    title: "7、团建活动",
+    title: "团建活动",
     tag: "⭐ 保障七",
     banner: "【每月一次】【主题团建活动】",
     image: "/image/entertainment-area/entertainment-area5.jpg",
