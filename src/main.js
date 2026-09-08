@@ -195,8 +195,15 @@ document.addEventListener('DOMContentLoaded', () => {
   advantageCards.forEach(card => {
     card.addEventListener('click', () => {
       const idx = card.getAttribute('data-index');
+      const targetId = card.getAttribute('data-target');
       const item = advantagesData[idx];
-      if (item && detailModal && detailModalBody) {
+
+      if (targetId) {
+        const targetSec = document.getElementById(targetId);
+        if (targetSec) {
+          targetSec.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else if (item && detailModal && detailModalBody) {
         detailModalBody.innerHTML = `
           <div style="text-align:center; margin-bottom:20px;">
             <img src="${item.image}" alt="${item.title}" style="width:100%; max-height:280px; object-fit:cover; border-radius:14px; margin-bottom:16px;">

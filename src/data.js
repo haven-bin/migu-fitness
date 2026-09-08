@@ -1,103 +1,126 @@
-// 7大核心优势保障数据 (精准对应用户官方优势)
+// 7大核心保障卡片数据 (1.营地总环境 2.宿舍环境 3.伙食 4.教练 5.课程 6.效果对比 7.团建活动)
 export const advantagesData = [
   {
-    title: "6+4全职明星教练与贴心照顾",
-    tag: "全福建口碑第一",
-    banner: "6+4全职明星教练与到位照顾",
-    image: "/image/coaching-staff/coaching-staff1.jpg",
-    shortDesc: "6位全职明星教练带练+4位生活教练叫醒与打餐服务，4~6节弹性训练课，全福建口碑效果最好、气氛最棒的老牌训练营！",
-    detailHtml: `
-      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">6+4全职明星教练阵容 · 照顾无微不至</h3>
-      <p style="margin-bottom:12px; color:#4B5563;">全福建口碑、效果最好、人气最高的老牌训练营！有气氛有氛围，让您更有效率地锻炼蜕变。</p>
-      <ul style="line-height:2; color:#374151; list-style:disc; padding-left:20px; margin-bottom:16px;">
-        <li><strong>6位全职明星教练带练：</strong>小班指导，4~6节弹性课程安排，满足不同体能学员。</li>
-        <li><strong>4位贴心生活教练：</strong>提供早起叫醒、营养打餐服务，全方位到位照顾。</li>
-        <li><strong>超棒训练氛围：</strong>大家齐心协力打卡掉秤，告别独自坚持的孤独感。</li>
-      </ul>
-    `
-  },
-  {
-    title: "新鲜美味伙食 · 拒绝预制菜",
-    tag: "每日伙食分享",
-    banner: "新鲜美味伙食 · 不做预制菜水煮菜",
-    image: "/image/front-page/front-page7.jpg",
-    shortDesc: "营养伙食每日透明分享，不做预制菜、水煮菜！新鲜现做美味佳肴，吃饱吃好也能高效瘦。",
-    detailHtml: `
-      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">每日新鲜现做 · 告别难吃水煮菜</h3>
-      <p style="margin-bottom:12px; color:#4B5563;">我们坚信只有吃得开心健康，才能持久瘦身！营养伙食每日群内透明分享。</p>
-      <ul style="line-height:2; color:#374151; list-style:disc; padding-left:20px; margin-bottom:16px;">
-        <li><strong>零预制菜 / 零生冷水煮菜：</strong>星级厨师团队每日现打现炒美味佳肴。</li>
-        <li><strong>控油低盐高蛋白：</strong>优质肉类与膳食纤维合理配比，好吃不发胖。</li>
-      </ul>
-    `
-  },
-  {
-    title: "每月主题团建 · 快乐度过每一天",
-    tag: "快乐氛围",
-    banner: "每月主题团建 · 营内欢乐满满",
-    image: "/image/entertainment-area/entertainment-area5.jpg",
-    shortDesc: "【每月一次】大型特色【团建活动】，带您出营拓展或营内狂欢，让您在营内快乐度过每一天！",
-    detailHtml: `
-      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">每月精彩团建 · 快乐掉秤不单调</h3>
-      <p style="margin-bottom:12px; color:#4B5563;">每月定期举办大型主题团建活动，让瘦身之旅充满欢声笑语。</p>
-    `
-  },
-  {
-    title: "43000平超大园区 · 娱乐区不无聊",
-    tag: "配套极其丰富",
-    banner: "篮球/电竞/麻将/台球娱乐区",
-    image: "/image/entertainment-area/entertainment-area1.jpg",
-    shortDesc: "拥有篮球场、电竞区、棋牌麻将、美式台球与休闲娱乐区等，闲暇时间丰富多彩绝不无聊！",
-    detailHtml: `
-      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">43000平超大园区 · 闲暇娱乐不无聊</h3>
-      <p style="margin-bottom:12px; color:#4B5563;">福建占地43000平超大旗舰基地，配套全能休娱生活区。</p>
-      <ul style="line-height:2; color:#374151; list-style:disc; padding-left:20px; margin-bottom:16px;">
-        <li><strong>运动设施：</strong>标准户外篮球场、羽毛球与有氧操场地。</li>
-        <li><strong>休娱设施：</strong>高清电竞设备、棋牌麻将室、美式台球与巨幕影音中心。</li>
-      </ul>
-    `
-  },
-  {
-    title: "无隐形私教推销 · 一价全包",
-    tag: "纯粹透明",
-    banner: "透明消费 · 无隐形私教推销",
+    title: "1、营地总环境",
+    tag: "⭐ 保障一",
+    banner: "43,000平旗舰营地总环境",
     image: "/image/office-area/office-area1.jpg",
-    shortDesc: "严格恪守行业诚信底线，无任何隐形二次消费、无私教推销套路，安心专注于减重！",
+    targetId: "environment",
+    shortDesc: "全福建最大 43,000 平封闭/半封闭式基地，具备现代化体测中心与24H医务安保防护。",
     detailHtml: `
-      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">零推销 · 零二次消费承诺</h3>
-      <p style="margin-bottom:12px; color:#4B5563;">入营签订正式合同，承诺费用一价全包！坚决杜绝任何推销套路。</p>
+      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">43,000平超大旗舰营地环境</h3>
+      <p style="margin-bottom:12px; color:#4B5563;">全福建最大封闭/半封闭式训练基地，配备现代化体测大厅、顾问室与24小时医务安保防范，环境优雅纯净。</p>
+      <ul style="line-height:2; color:#374151; list-style:disc; padding-left:20px; margin-bottom:16px;">
+        <li><strong>43000平占地：</strong>全福建规模最大、设施最完善的减肥训练营基地。</li>
+        <li><strong>封闭式安全管理：</strong>周边零外卖零食干扰，24小时安保与医疗随营监护。</li>
+        <li><strong>专业体测中心：</strong>配合人体成分分析仪，定期追踪体脂与各项肌肉数据变化。</li>
+      </ul>
     `
   },
   {
-    title: "封闭/半封闭体系 · 无外卖零食干扰",
-    tag: "纯净环境",
-    banner: "全封闭/半封闭纯净减重环境",
-    image: "/image/front-page/front-page4.jpg",
-    shortDesc: "主打高效减肥塑形，全封闭/半封闭科学管理体系，周围零外卖、零零食干扰，全心投入蜕变！",
+    title: "2、宿舍环境",
+    tag: "⭐ 保障二",
+    banner: "豪华单人/双人/多人间宿舍",
+    image: "/image/single-room/single-room1.jpg",
+    targetId: "rooms",
+    shortDesc: "独立干湿分离卫浴、采光阳台，配合4位生活教练叫醒打餐与每日管家保洁。",
     detailHtml: `
-      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">纯净减重环境 · 排除外界干扰</h3>
-      <p style="margin-bottom:12px; color:#4B5563;">周边无外卖零食宵夜诱惑，在纯净环境里快速培养自律饮食与锻炼习惯。</p>
+      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">宾馆级营房宿舍 · 4位生活教练到位照顾</h3>
+      <p style="margin-bottom:12px; color:#4B5563;">提供豪华单人间、双人间、三人间及四人间等多种房型选择，居住舒适温馨。</p>
+      <ul style="line-height:2; color:#374151; list-style:disc; padding-left:20px; margin-bottom:16px;">
+        <li><strong>生活教练叫醒打餐：</strong>4位生活教练全天候服务，保障早起训练与定时定量打餐。</li>
+        <li><strong>全套独立卫浴：</strong>干湿分离浴室、静音冷暖空调、高弹舒适床垫与独立落地阳台。</li>
+      </ul>
     `
   },
   {
-    title: "完美售后服务 · 出营监督不反弹",
-    tag: "终生跟踪",
-    banner: "出营教练继续跟踪监督指导",
-    image: "/image/office-area/office-area2.jpg",
-    shortDesc: "售后服务完美！结营后教练团队继续长期跟踪监督指导服务，助您长久保持好身材！",
+    title: "3、伙食",
+    tag: "⭐ 保障三",
+    banner: "新鲜美味伙食 · 拒做预制菜",
+    image: "/image/front-page/front-page7.jpg",
+    targetId: "dining",
+    shortDesc: "营养伙食每日透明分享，坚决不做预制菜水煮菜！星级大厨每日新鲜现做美味。",
     detailHtml: `
-      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">完美售后 · 出营长效监督</h3>
-      <p style="margin-bottom:12px; color:#4B5563;">结营绝非终点！导师团队建立出营监督群，提供膳食评估与自主训练指导，保障终生防反弹。</p>
+      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">星级大厨现炒现做 · 拒做预制菜水煮菜</h3>
+      <p style="margin-bottom:12px; color:#4B5563;">我们坚信吃饱吃好才能持久瘦身！拒绝难吃的生冷水煮菜与劣质预制菜。</p>
+      <ul style="line-height:2; color:#374151; list-style:disc; padding-left:20px; margin-bottom:16px;">
+        <li><strong>美味与科学并重：</strong>低油低盐搭配优质蛋白质，每日热菜新鲜出炉。</li>
+        <li><strong>透明分享监督：</strong>每日餐食拍照分享至群内，膳食搭配全公开。</li>
+      </ul>
+    `
+  },
+  {
+    title: "4、教练",
+    tag: "⭐ 保障四",
+    banner: "6+4全职明星教练到位照顾",
+    image: "/image/coaching-staff/coaching-staff1.jpg",
+    targetId: "coaches",
+    shortDesc: "6位专业明星教练带练指导 + 4位生活教练叫醒打餐，全福建口碑效果最好老牌教练组！",
+    detailHtml: `
+      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">6+4全职明星教练阵容</h3>
+      <p style="margin-bottom:12px; color:#4B5563;">6位明星教练带练 + 4位生活教练叫醒与打餐，全福建口碑、效果最好、人气最旺的老牌教练组！</p>
+      <ul style="line-height:2; color:#374151; list-style:disc; padding-left:20px; margin-bottom:16px;">
+        <li><strong>全资深教练认证：</strong>CBBA、ZUMBA、IFBB、MFT格斗及体适能全面覆盖。</li>
+        <li><strong>耐心指导拒绝推销：</strong>零隐形私教推销套路，专注每位学员的减重效果。</li>
+      </ul>
+    `
+  },
+  {
+    title: "5、课程",
+    tag: "⭐ 保障五",
+    banner: "每日4~6节科学弹性课程",
+    image: "/image/teen-class/teen-class1.jpg",
+    targetId: "courses",
+    shortDesc: "每日4~6节科学弹性有氧/力量/搏击排课，搭配大体重青少年暑期体态矫正特训。",
+    detailHtml: `
+      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">每日 4~6 节科学弹性课程</h3>
+      <p style="margin-bottom:12px; color:#4B5563;">包含燃脂搏击、动感单车、ZUMBA舞蹈、核心力量及体态纠正课程，弹性选修更高效。</p>
+      <ul style="line-height:2; color:#374151; list-style:disc; padding-left:20px; margin-bottom:16px;">
+        <li><strong>分层定制排课：</strong>根据入学体测数据分配训练强度，保护膝关节与腰椎。</li>
+        <li><strong>青少年特训班：</strong>针对10-18岁大体重青少年，结合体态矫正与体能提升。</li>
+      </ul>
+    `
+  },
+  {
+    title: "6、效果对比",
+    tag: "⭐ 保障六",
+    banner: "入营签约减肥 · 无效退款",
+    image: "/image/celebrity-comparisons/celebrity-comparisons4.jpg",
+    targetId: "trainees",
+    shortDesc: "全福建效果最好，正式签署保障协议，真实减重对比见证，结营出营继续跟踪防反弹。",
+    detailHtml: `
+      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">入营签约减肥 · 无效退款承诺</h3>
+      <p style="margin-bottom:12px; color:#4B5563;">入营即签订法律效益合同样本，真实数据对比，出营后教练团队继续保持微信跟踪监督。</p>
+      <ul style="line-height:2; color:#374151; list-style:disc; padding-left:20px; margin-bottom:16px;">
+        <li><strong>签约合同保障：</strong>达不到协议约定减重比例按条款退款。</li>
+        <li><strong>出营售后监督：</strong>建立结营监督群，提供长期饮食与训练指导防反弹。</li>
+      </ul>
+    `
+  },
+  {
+    title: "7、团建活动",
+    tag: "⭐ 保障七",
+    banner: "【每月一次】【主题团建活动】",
+    image: "/image/entertainment-area/entertainment-area5.jpg",
+    targetId: "resort",
+    shortDesc: "每月定期举办特色出营/营内主题团建活动，配备篮球、电竞、麻将、台球休娱区！",
+    detailHtml: `
+      <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">每月主题团建 & 丰富休娱设施</h3>
+      <p style="margin-bottom:12px; color:#4B5563;">【每月一次主题团建】，丰富团建游戏与外出拓展，让每一位学员快乐度过在营时光。</p>
+      <ul style="line-height:2; color:#374151; list-style:disc; padding-left:20px; margin-bottom:16px;">
+        <li><strong>多元休娱区：</strong>户外篮球场、电竞竞技区、棋牌麻将室、美式台球厅全天开放。</li>
+        <li><strong>融洽战友氛围：</strong>每月欢聚烧烤派对或户外拓展，气氛热烈好玩。</li>
+      </ul>
     `
   }
 ];
 
 // 明星学员对比数据
 export const traineesData = [
-  { loss: "减重28斤", name: "张同学", age: "22岁", duration: "入营 30 天", beforeAfter: "148斤 → 120斤", quote: "30天在觅谷顺利减下28斤，教练超细心，氛好效果太赞了！", img: "/image/celebrity-comparisons/celebrity-comparisons1.jpg", range: "20-30" },
-  { loss: "减重35斤", name: "李先生", age: "29岁", duration: "入营 45 天", beforeAfter: "192斤 → 157斤", quote: "啤酒肚不见了，伙食顿顿现炒超好吃，感谢觅谷6+4教练组！", img: "/image/celebrity-comparisons/celebrity-comparisons2.jpg", range: "30+" },
-  { loss: "减重18斤", name: "王女士", age: "26岁", duration: "入营 28 天", beforeAfter: "136斤 → 118斤", quote: "拒绝水煮菜，顿顿热菜肉香！每月团建玩得超级开心！", img: "/image/celebrity-comparisons/celebrity-comparisons3.jpg", range: "15-20" },
-  { loss: "减重42斤", name: "陈学员", age: "24岁", duration: "入营 60 天", beforeAfter: "215斤 → 173斤", quote: "43000平园区设备齐，打篮球打台球超丰富，出营后教练还在监督我！", img: "/image/celebrity-comparisons/celebrity-comparisons4.jpg", range: "30+" },
-  { loss: "减重22斤", name: "周女士", age: "28岁", duration: "入营 30 天", beforeAfter: "145斤 → 123斤", quote: "觅谷氛围全福建最好，周围没外卖没零食，效果太棒了！", img: "/image/celebrity-comparisons/celebrity-comparisons5.jpg", range: "20-30" },
-  { loss: "减重19斤", name: "赵学员", age: "25岁", duration: "入营 30 天", beforeAfter: "150斤 → 131斤", quote: "腰围细了12公分！完全没有私教隐形推销，非常安心！", img: "/image/celebrity-comparisons/celebrity-comparisons6.png", range: "15-20" }
+  { loss: "减重35斤", name: "张学员", age: "21岁", duration: "入营 30 天", beforeAfter: "165斤 → 130斤", quote: "在觅谷30天成功减重35斤，腹部脂肪明显减少，体能也大幅提升！", img: "/image/celebrity-comparisons/celebrity-comparisons1.jpg", range: "30+" },
+  { loss: "减重28斤", name: "林学员", age: "23岁", duration: "入营 30 天", beforeAfter: "158斤 → 130斤", quote: "伙食顿顿热菜新鲜现做，6+4教练叫醒拉练，效果真实有效！", img: "/image/celebrity-comparisons/celebrity-comparisons2.jpg", range: "20-30" },
+  { loss: "减重60斤", name: "陈学员", age: "20岁", duration: "入营 90 天", beforeAfter: "195斤 → 135斤", quote: "4阶段全程见证蜕变！从大胖墩到匀称型男，感谢觅谷教练团队的悉心指导！", img: "/image/celebrity-comparisons/celebrity-comparisons3.jpg", range: "30+" },
+  { loss: "成功减重80斤", name: "刘女士", age: "25岁", duration: "入营 120 天", beforeAfter: "200斤 → 120斤", quote: "成功减重80斤！从200斤一路减到120斤，在觅谷实现了脱胎换骨的蜕变！", img: "/image/celebrity-comparisons/celebrity-comparisons4.jpg", range: "30+" },
+  { loss: "减重45斤", name: "周女士", age: "28岁", duration: "入营 60 天", beforeAfter: "185斤 → 140斤", quote: "三阶段对比超明显！腰围大幅收紧，营区周边无外卖零食干扰，瘦得又快又健康！", img: "/image/celebrity-comparisons/celebrity-comparisons5.jpg", range: "30+" },
+  { loss: "减重50斤", name: "郑学员", age: "26岁", duration: "入营 60 天", beforeAfter: "210斤 → 160斤", quote: "侧面看肚子完全下去了！出营后教练还在微信上跟踪指导，长效保障不反弹！", img: "/image/celebrity-comparisons/celebrity-comparisons6.png", range: "30+" }
 ];
