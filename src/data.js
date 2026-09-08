@@ -1,8 +1,8 @@
-// 7大核心保障卡片数据 (营地总环境、宿舍环境、伙食、教练、课程、效果对比、团建活动)
+// 7大核心优势卡片数据 (营地总环境、宿舍环境、伙食、教练、课程、效果对比、团建活动)
 export const advantagesData = [
   {
     title: "营地总环境",
-    tag: "⭐ 保障一",
+    tag: "⭐ 优势一",
     banner: "43,000平旗舰营地总环境",
     image: "/image/office-area/office-area1.jpg",
     targetId: "environment",
@@ -19,7 +19,7 @@ export const advantagesData = [
   },
   {
     title: "宿舍环境",
-    tag: "⭐ 保障二",
+    tag: "⭐ 优势二",
     banner: "豪华单人/双人/多人间宿舍",
     image: "/image/single-room/single-room1.jpg",
     targetId: "rooms",
@@ -35,7 +35,7 @@ export const advantagesData = [
   },
   {
     title: "伙食",
-    tag: "⭐ 保障三",
+    tag: "⭐ 优势三",
     banner: "新鲜美味伙食 · 拒做预制菜",
     image: "/image/front-page/front-page7.jpg",
     targetId: "dining",
@@ -51,7 +51,7 @@ export const advantagesData = [
   },
   {
     title: "教练",
-    tag: "⭐ 保障四",
+    tag: "⭐ 优势四",
     banner: "6+4全职明星教练到位照顾",
     image: "/image/coaching-staff/coaching-staff1.jpg",
     targetId: "coaches",
@@ -67,7 +67,7 @@ export const advantagesData = [
   },
   {
     title: "课程",
-    tag: "⭐ 保障五",
+    tag: "⭐ 优势五",
     banner: "每日4~6节科学弹性课程",
     image: "/image/teen-class/teen-class1.jpg",
     targetId: "courses",
@@ -83,11 +83,11 @@ export const advantagesData = [
   },
   {
     title: "效果对比",
-    tag: "⭐ 保障六",
+    tag: "⭐ 优势六",
     banner: "入营签约减肥 · 无效退款",
     image: "/image/celebrity-comparisons/celebrity-comparisons4.jpg",
     targetId: "trainees",
-    shortDesc: "全福建效果最好，正式签署保障协议，真实减重对比见证，结营出营继续跟踪防反弹。",
+    shortDesc: "全福建效果最好，正式签署协议，真实减重对比见证，结营出营继续跟踪防反弹。",
     detailHtml: `
       <h3 style="color:#2E8A4E; font-size:1.4rem; font-weight:900; margin-bottom:12px;">入营签约减肥 · 无效退款承诺</h3>
       <p style="margin-bottom:12px; color:#4B5563;">入营即签订法律效益合同样本，真实数据对比，出营后教练团队继续保持微信跟踪监督。</p>
@@ -99,7 +99,7 @@ export const advantagesData = [
   },
   {
     title: "团建活动",
-    tag: "⭐ 保障七",
+    tag: "⭐ 优势七",
     banner: "【每月一次】【主题团建活动】",
     image: "/image/entertainment-area/entertainment-area5.jpg",
     targetId: "resort",
