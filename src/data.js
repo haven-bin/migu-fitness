@@ -4,7 +4,7 @@ export const advantagesData = [
     title: "营地总环境",
     tag: "⭐ 优势一",
     banner: "43,000平旗舰营地总环境",
-    image: "/image/office-area/office-area1.jpg",
+    image: "/image/front-page/front-page3.jpg",
     targetId: "environment",
     shortDesc: "全福建最大 43,000 平封闭/半封闭式基地，具备现代化体测中心与24H医务安保防护。",
     detailHtml: `
