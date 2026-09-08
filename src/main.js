@@ -283,7 +283,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Interactive BMI & Weight Loss Calculator
+  // 7. Interactive BMI & Weight Loss Calculator & Smooth Scroll to Calculator
+  const openCalcBtn = document.getElementById('openCalcBtn');
+  const heroCalcBtn = document.getElementById('heroCalcBtn');
+  const floatCalcBtn = document.getElementById('floatCalc');
+  const calcSection = document.getElementById('calculator');
+
+  function scrollToCalculator() {
+    if (calcSection) {
+      calcSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  if (openCalcBtn) openCalcBtn.addEventListener('click', scrollToCalculator);
+  if (heroCalcBtn) heroCalcBtn.addEventListener('click', scrollToCalculator);
+  if (floatCalcBtn) floatCalcBtn.addEventListener('click', scrollToCalculator);
+
   const bmiForm = document.getElementById('bmiForm');
   const calcResultBox = document.getElementById('calcResultBox');
   const resultContent = document.getElementById('resultContent');
