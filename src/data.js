@@ -118,7 +118,6 @@ export const advantagesData = [
 // 明星学员对比数据
 export const traineesData = [
   { loss: "减重35斤", name: "张学员", age: "21岁", duration: "入营 30 天", beforeAfter: "165斤 → 130斤", quote: "在觅谷30天成功减重35斤，腹部脂肪明显减少，体能也大幅提升！", img: "/image/celebrity-comparisons/celebrity-comparisons1.jpg", range: "30+" },
-  { loss: "减重28斤", name: "林学员", age: "23岁", duration: "入营 30 天", beforeAfter: "158斤 → 130斤", quote: "伙食顿顿热菜新鲜现做，6+4教练叫醒拉练，效果真实有效！", img: "/image/celebrity-comparisons/celebrity-comparisons2.jpg", range: "20-30" },
   { loss: "减重60斤", name: "陈学员", age: "20岁", duration: "入营 90 天", beforeAfter: "195斤 → 135斤", quote: "4阶段全程见证蜕变！从大胖墩到匀称型男，感谢觅谷教练团队的悉心指导！", img: "/image/celebrity-comparisons/celebrity-comparisons3.jpg", range: "30+" },
   { loss: "成功减重80斤", name: "刘女士", age: "25岁", duration: "入营 120 天", beforeAfter: "200斤 → 120斤", quote: "成功减重80斤！从200斤一路减到120斤，在觅谷实现了脱胎换骨的蜕变！", img: "/image/celebrity-comparisons/celebrity-comparisons4.jpg", range: "30+" },
   { loss: "减重45斤", name: "周女士", age: "28岁", duration: "入营 60 天", beforeAfter: "185斤 → 140斤", quote: "三阶段对比超明显！腰围大幅收紧，营区周边无外卖零食干扰，瘦得又快又健康！", img: "/image/celebrity-comparisons/celebrity-comparisons5.jpg", range: "30+" },
