@@ -921,6 +921,31 @@ img {
   background: #fff;
 }
 
+.room-amenities-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(46, 138, 78, 0.08) 0%, rgba(20, 53, 32, 0.04) 100%);
+  border: 1px solid rgba(46, 138, 78, 0.25);
+  color: #143520;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 14px;
+  box-shadow: 0 4px 12px rgba(46, 138, 78, 0.06);
+}
+
+.room-amenities-badge i {
+  color: #E65100;
+  font-size: 1.1rem;
+}
+
+.room-amenities-badge strong {
+  color: #2E8A4E;
+  font-weight: 800;
+}
+
 .room-filters {
   display: flex;
   justify-content: center;
