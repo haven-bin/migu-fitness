@@ -260,14 +260,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxCaption = document.getElementById('lightboxCaption');
   const closeLightbox = document.getElementById('closeLightbox');
 
-  const clickableImgElements = document.querySelectorAll('.resort-gallery-item, .room-card, .office-card, .coach-card, .trainee-img-wrapper');
+  const clickableImgElements = document.querySelectorAll('.resort-gallery-item, .room-card, .office-card, .coach-card, .trainee-card, .trainee-img-wrapper, .zone-card, .advantage-card, .teen-gallery-grid img');
 
   clickableImgElements.forEach(item => {
     item.addEventListener('click', (e) => {
       if (e.target.tagName === 'BUTTON' || e.target.closest('button')) return;
 
-      const img = item.querySelector('img');
-      const captionText = item.querySelector('h3, h4, p') ? item.querySelector('h3, h4, p').innerText : '';
+      const img = item.tagName === 'IMG' ? item : item.querySelector('img');
+      const captionContainer = item.tagName === 'IMG' ? item.parentElement : item;
+      const captionText = captionContainer.querySelector('h3, h4, p') ? captionContainer.querySelector('h3, h4, p').innerText : (img.alt || '');
       if (img && lightboxModal && lightboxImg) {
         lightboxImg.src = img.src;
         if (lightboxCaption) lightboxCaption.innerText = captionText;

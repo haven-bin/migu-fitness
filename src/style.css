@@ -960,6 +960,7 @@ img {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(46, 138, 78, 0.12);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .zone-card:hover {
@@ -1350,6 +1351,7 @@ img {
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.4s ease;
+  cursor: pointer;
 }
 
 .teen-gallery-grid img:hover {
